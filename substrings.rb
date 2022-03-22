@@ -3,8 +3,7 @@ def substring_counter(string, dictionary)
 # The #scan String method returns an Array with every match already
     tally[word] = string.scan(/#{word}/i).length
 # Drop words with 0 occurences
-    tally.delete_if{|word,occ| occ == 0}
-    tally
+    tally.reject{|word,occ| occ == 0}
   end
 end
 
