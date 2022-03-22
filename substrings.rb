@@ -1,5 +1,5 @@
 def substring_counter(string, dictionary)
-  tally = dictionary.reduce({}) do |tally, word|
+  dictionary.reduce({}) do |tally, word|
 # The #scan String method returns an Array with every match already
     tally[word] = string.scan(/#{word}/i).length
 # Drop words with 0 occurences
@@ -8,7 +8,7 @@ def substring_counter(string, dictionary)
   end
 end
 
-dictionary = ["told", "you", "so", "obviously","yes","no"]
+dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 puts "Please enter a string to be searched:"
 string = gets.chomp
 puts "\n"
