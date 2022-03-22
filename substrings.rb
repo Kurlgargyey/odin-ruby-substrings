@@ -9,9 +9,6 @@ def substring_counter(string, dictionary)
 end
 
 dictionary = ["told", "you", "so", "obviously","yes","no"]
-#string = "Told you so! Told Told Told you so! obviously obviously obviously obviously yes o bvi o us ly toldyouso"
-#word ="told"
-#p string.scan(/#{word}/i)
 puts "Please enter a string to be searched:"
 string = gets.chomp
 puts "\n"
